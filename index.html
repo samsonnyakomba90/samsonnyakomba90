@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3dfa46d2ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closenmenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+         
+          <div class="header-text">
+            <h1>Hi, Iam <span>Samson Nyakomba</span>, <br>located in South Africa</h1>
+        <p>Junior Frontend Developer</p>
+   
+          </div>
+        </div>
+    </div>
+<!--  ------------ About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic-3.png">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>l'm a Self-taught Frontend Developer and l have been building websites , creating mobile apps , building landing pages and survey forms using HTML, CSS and JavaScript. l love coding and l code several times a day, l always love  learning new things.My goal is to become an outstanding FullStack Developer</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links"onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>Building responsive websites</li>
+                            <li><span>CSS</span><br>Styling using variety of CSS elements</li>
+                            <li><span>JavaScript</span><br>Creating great responsive apps and websites</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-recent</span><br>Iam a passionate self-taught Developer and l enjoy coding .l have been coding for more than 6months </li>
+                            <li><span>6months</span><br>first three months l was familiarise myself with HTML and CSS and  after l started  freelancing building email templates, creating mobile apps  and survey forms </li>
+                            <li><span>JavaScript</span><br>i do have JavaScript basic Skills , l can build dropdown menu, responsive toggle buttons, switching from one page to another</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Training coding using FreeCodeCamp</li>
+                            <li><span>2023</span><br>l got a Certificate from FreeCodeCamp that showcase the Skills l have </li>
+                            <li><span>2023</span><br>l went through a lot of Youtube tutorials, joining communities from several developers</li>
+                        </ul>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------- SERVICES -------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development can be divided into two main categories of frontend and backend, l started with frontend because l find it more friendly than backend but as l progresses with my journey to become a fullstack developer , l will wrap up my course with backend. </p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+               <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>Coding with HTML & CSS</h2>
+                <p>My journey coding with HTML and CSS sounds very interesting. HTML and CSS are the building blocks of web development, and learning them can open up many opportunities for me. HTML stands for HyperText Markup Language, and it is used to define the structure and content of a web page. CSS stands for Cascading Style Sheets, and it is used to style and layout the web page. HTML and CSS work together to create beautiful and functional websites and web applications.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>JavaScript</h2>
+                <p>JavaScript is a programming language that is mainly used for web development. It can create dynamic and interactive web pages and applications by manipulating the HTML and CSS elements. A JavaScript developer is someone who uses JavaScript to design, develop, and maintain web applications. </p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------- portifolio-- ---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/user-1.png">
+                <a href="skyline.html" class="btn">City Skyline</a>
+                <a href="survey form.html" class="btn">Survey form</a>
+            </div>
+            <div class="work">
+                <img src="images/user-2.png">
+                <a href="bal sheet.html" class="btn">Balance sheet</a>
+            </div>
+            <div class="work">
+                <img src="images/user-3.png">
+                <a href="penguin.html" class="btn">penguin</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------- contact ---------------------------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>samsonnyakomba@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>0027612837646</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Cv.pdf" download class="btn btn2 ">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"rows="8" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  &copy; Sam. Made with <i class="fa-sharp fa-solid fa-heart"></i>Self Taught Classes.</p>
+    </div>
+ </div>
+   
+   
+   
+   <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+   
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closenmenu(){
+            sidemeu.style.right = "-200px";
+        }
+    
+    </script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbxrXC5P5e_R1uD8lO6obSsftYvLjCztXxyoBS2CnRjBZXCFT59ToFwTXxj6rCnSsPuXvg/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
